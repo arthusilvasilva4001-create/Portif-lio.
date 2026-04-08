@@ -1,117 +1,164 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<title>Gengar Developer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
 
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0d0d0d;
-    color: #ffffff;
-  }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
-  header {
-    text-align: center;
-    padding: 40px 20px;
-    background: #111;
-    border-bottom: 1px solid #222;
-  }
+    body {
+      background: #0a0a0f;
+      color: #fff;
+    }
 
-  header h1 {
-    margin: 0;
-    font-size: 32px;
-  }
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
 
-  header p {
-    color: #aaa;
-    margin-top: 10px;
-  }
+    .menu {
+      font-size: 24px;
+      cursor: pointer;
+    }
 
-  .section {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 0 20px;
-  }
+    .container {
+      padding: 20px;
+    }
 
-  .section h2 {
-    border-left: 4px solid #6c5ce7;
-    padding-left: 10px;
-    margin-bottom: 20px;
-  }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
 
-  .card {
-    background: #1a1a1a;
-    border: 1px solid #2a2a2a;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    transition: 0.2s;
-  }
+    h2 {
+      margin: 40px 0 10px;
+    }
 
-  .card:hover {
-    border-color: #6c5ce7;
-    transform: translateY(-3px);
-  }
+    p {
+      color: #aaa;
+      margin-bottom: 15px;
+    }
 
-  .highlight {
-    border: 1px solid #6c5ce7;
-    text-align: center;
-    font-weight: bold;
-  }
-</style>
+    .btn {
+      background: linear-gradient(90deg, #7b3fe4, #a855f7);
+      border: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .card {
+      background: #11111a;
+      padding: 20px;
+      border-radius: 15px;
+      margin-top: 20px;
+      box-shadow: 0 0 20px rgba(128, 0, 255, 0.1);
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 5px 10px;
+      background: #1a1a2e;
+      border-radius: 10px;
+      margin: 5px 5px 0 0;
+      font-size: 12px;
+      color: #c084fc;
+    }
+
+    .status {
+      float: right;
+      font-size: 12px;
+      color: #22c55e;
+    }
+
+    .section-title {
+      color: #a855f7;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    .footer {
+      text-align: center;
+      margin: 50px 0;
+      color: #777;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-  <h1>Gengar Developer</h1>
-  <p>Programador • Bot Developer • Roblox Game Developer</p>
+  <div>Meu Portfólio</div>
+  <div class="menu">☰</div>
 </header>
 
-<section class="section">
-  <h2>🚀 Sobre mim</h2>
-  <div class="card">
-    Sou programador focado em automação, bots e desenvolvimento de jogos.<br><br>
-    Tenho experiência criando sistemas e projetos para comunidades online,
-    sempre evoluindo como desenvolvedor.<br><br>
+<div class="container">
 
-    💻 Linguagens principais:<br>
-    • Python<br>
-    • Java<br>
-    • Lua<br>
-    • JavaScript
-  </div>
-</section>
+  <!-- HERO -->
+  <span class="section-title">DISCORD ENGINEER</span>
+  <h1>Desenvolvo experiências estratégicas para servidores Discord.</h1>
+  <p>Criação de servidores, bots e organização completa de comunidades.</p>
+  <button class="btn">Contate-me</button>
 
-<section class="section">
-  <h2>🧠 Especialidades</h2>
+  <!-- SERVIÇOS -->
+  <h2>O que eu faço</h2>
 
   <div class="card">
-    🤖 Desenvolvimento de Bots<br>
-    Bots para Discord e automações de comunidades.
+    <h3>Estrutura completa</h3>
+    <p>Organização de canais, cargos e categorias.</p>
+    <div class="tag">Canais</div>
+    <div class="tag">Categorias</div>
+    <div class="tag">Cargos</div>
   </div>
 
   <div class="card">
-    🖥️ Servidores e Sistemas<br>
-    Organização de servidores e desenvolvimento de sistemas.
+    <h3>Configuração de bots</h3>
+    <p>Automação e sistemas para seu servidor.</p>
+    <div class="tag">Moderação</div>
+    <div class="tag">Utilidades</div>
+    <div class="tag">Entretenimento</div>
   </div>
 
   <div class="card">
-    🎮 Desenvolvimento no Roblox<br>
-    Criação de mapas e mecânicas com Lua.
-  </div>
-</section>
-
-<section class="section">
-  <h2>📬 Contato</h2>
-
-  <div class="card highlight">
-    Discord: chatofiel
+    <h3>Setup de moderação</h3>
+    <p>Configuração de regras e automod.</p>
+    <div class="tag">Regras</div>
+    <div class="tag">Punições</div>
   </div>
 
-</section>
+  <!-- PROJETOS -->
+  <h2>Projetos</h2>
+
+  <div class="card">
+    <span class="status">● Ativo</span>
+    <h3>Nome do Projeto</h3>
+    <p>Descrição do projeto aqui (edita depois).</p>
+    <button class="btn">Acessar</button>
+  </div>
+
+  <!-- AVALIAÇÕES -->
+  <h2>Avaliações</h2>
+
+  <div class="card">
+    <h3>Nome da pessoa</h3>
+    <p>"Feedback do cliente aqui..."</p>
+  </div>
+
+</div>
+
+<div class="footer">
+  © 2026 - Seu nome
+</div>
 
 </body>
 </html>
