@@ -31,10 +31,6 @@ nav {
   margin-bottom:40px;
 }
 
-.logo {
-  font-weight:bold;
-}
-
 /* HERO */
 .hero h1 { font-size:32px; }
 
@@ -43,6 +39,7 @@ nav {
   margin:10px 0;
 }
 
+/* BUTTON */
 .btn {
   background:linear-gradient(90deg,#7b3fe4,#a855f7);
   border:none;
@@ -69,6 +66,7 @@ nav {
   box-shadow:0 0 20px rgba(128,0,255,0.2);
 }
 
+/* TAG */
 .tag {
   display:inline-block;
   padding:6px 12px;
@@ -79,6 +77,7 @@ nav {
   color:#c084fc;
 }
 
+/* STATUS */
 .status {
   float:right;
   color:#22c55e;
@@ -91,7 +90,7 @@ nav {
   gap:20px;
 }
 
-/* BOTÃO DISTÂNCIA */
+/* BUTTON SPACE */
 .btn-server {
   margin-top:25px;
 }
@@ -135,7 +134,7 @@ h2 { margin-top:50px; }
 <div class="container">
 
 <nav>
-  <div class="logo">Gengar.dev</div>
+  <div>Gengar.dev</div>
   <div>☰</div>
 </nav>
 
@@ -163,26 +162,35 @@ h2 { margin-top:50px; }
   </div>
 </div>
 
-<!-- HABILIDADES (ESTILO PRINT) -->
+<!-- HABILIDADES -->
 <h2>Habilidades</h2>
 
-<div class="card">
-  <h3>O que eu faço</h3>
+<div class="grid">
 
-  <p style="margin-bottom:10px;">
-    Desenvolvimento completo de servidores Discord com foco em desempenho,
-    organização e experiência do usuário.
-  </p>
+  <div class="card">
+    <h3>Estrutura de Servidores</h3>
+    <p>Organização completa de canais, categorias e cargos para uma experiência clara e profissional.</p>
+    <div class="tag">Canais</div>
+    <div class="tag">Categorias</div>
+    <div class="tag">Cargos</div>
+  </div>
 
-  <div class="tag">Moderação Avançada</div>
-  <div class="tag">Administração de Servidores</div>
-  <div class="tag">Criação de Bots</div>
-  <div class="tag">Automação</div>
-  <div class="tag">Sistema de Cargos</div>
-  <div class="tag">Organização de Canais</div>
-  <div class="tag">Segurança</div>
-  <div class="tag">Verificação</div>
-  <div class="tag">Gestão de Comunidade</div>
+  <div class="card">
+    <h3>Configuração de Bots</h3>
+    <p>Criação e configuração de bots para automação e sistemas inteligentes no servidor.</p>
+    <div class="tag">Moderação</div>
+    <div class="tag">Automação</div>
+    <div class="tag">Utilidades</div>
+  </div>
+
+  <div class="card">
+    <h3>Moderação & Segurança</h3>
+    <p>Implementação de regras, verificação e sistemas de punição para manter o servidor seguro.</p>
+    <div class="tag">Regras</div>
+    <div class="tag">Punições</div>
+    <div class="tag">Verificação</div>
+  </div>
+
 </div>
 
 <!-- SERVIDORES -->
@@ -190,7 +198,6 @@ h2 { margin-top:50px; }
 
 <div class="grid">
 
-<!-- SHANDOW -->
 <div class="card">
   <span class="status">● Ativo</span>
   <h3>Shandow Trades</h3>
@@ -200,8 +207,7 @@ h2 { margin-top:50px; }
     🛡️ Sinta-se em casa para trocas justas e tranquilas! ☕<br><br>
     Moderadores ativos, regras cristalinas e sistema completo de verificação,
     garantindo segurança total para todos os membros.<br><br>
-    Comunidade acolhedora que une traders iniciantes e experientes,
-    promovendo negociações confiáveis e organizadas.
+    Comunidade acolhedora que une traders iniciantes e experientes.
   </p>
 
   <p><strong>Cargo:</strong> CEO</p>
@@ -211,18 +217,15 @@ h2 { margin-top:50px; }
   </a>
 </div>
 
-<!-- EB -->
 <div class="card">
   <span class="status">● Ativo</span>
   <h3>[EB] Exército Brasileiro</h3>
 
   <p>
     🇧🇷 Disciplina, hierarquia e honra.<br><br>
-    Servidor baseado em sistema militar com treinamentos intensivos,
-    missões estratégicas e operações táticas organizadas.<br><br>
-    Sistema de promoção por mérito, regras rígidas e foco em trabalho em equipe,
-    proporcionando uma experiência realista e estruturada.<br><br>
-    Ambiente focado em liderança, evolução e respeito à hierarquia.
+    Treinamentos intensivos, missões estratégicas e operações táticas.<br><br>
+    Sistema de promoção por mérito e regras rígidas com foco em trabalho em equipe.<br><br>
+    Ambiente estruturado e organizado baseado no sistema militar.
   </p>
 
   <p><strong>Cargo:</strong> CEO</p>
