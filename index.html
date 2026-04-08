@@ -1,164 +1,182 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfólio Gengar</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
 
-    body {
-      background: #0a0a0f;
-      color: #fff;
-    }
+body {
+  background: #0a0a0f;
+  color: white;
+}
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px;
-    }
+.container {
+  padding: 20px;
+}
 
-    .menu {
-      font-size: 24px;
-      cursor: pointer;
-    }
+h1 { font-size: 28px; }
+h2 { margin-top: 40px; }
 
-    .container {
-      padding: 20px;
-    }
+p { color: #aaa; margin-top: 10px; }
 
-    h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
+.btn {
+  background: linear-gradient(90deg,#7b3fe4,#a855f7);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  margin-top: 15px;
+}
 
-    h2 {
-      margin: 40px 0 10px;
-    }
+.card {
+  background: #11111a;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
 
-    p {
-      color: #aaa;
-      margin-bottom: 15px;
-    }
+.tag {
+  display: inline-block;
+  background: #1a1a2e;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 5px;
+  font-size: 12px;
+  color: #c084fc;
+}
 
-    .btn {
-      background: linear-gradient(90deg, #7b3fe4, #a855f7);
-      border: none;
-      padding: 12px 20px;
-      border-radius: 10px;
-      color: white;
-      cursor: pointer;
-      margin-top: 10px;
-    }
+.status {
+  float: right;
+  color: #22c55e;
+}
 
-    .card {
-      background: #11111a;
-      padding: 20px;
-      border-radius: 15px;
-      margin-top: 20px;
-      box-shadow: 0 0 20px rgba(128, 0, 255, 0.1);
-    }
+textarea {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background: #0f0f18;
+  color: white;
+  border: none;
+}
 
-    .tag {
-      display: inline-block;
-      padding: 5px 10px;
-      background: #1a1a2e;
-      border-radius: 10px;
-      margin: 5px 5px 0 0;
-      font-size: 12px;
-      color: #c084fc;
-    }
-
-    .status {
-      float: right;
-      font-size: 12px;
-      color: #22c55e;
-    }
-
-    .section-title {
-      color: #a855f7;
-      font-size: 14px;
-      margin-top: 40px;
-    }
-
-    .footer {
-      text-align: center;
-      margin: 50px 0;
-      color: #777;
-    }
-  </style>
+a {
+  text-decoration: none;
+}
+</style>
 </head>
 
 <body>
 
-<header>
-  <div>Meu Portfólio</div>
-  <div class="menu">☰</div>
-</header>
-
 <div class="container">
 
-  <!-- HERO -->
-  <span class="section-title">DISCORD ENGINEER</span>
-  <h1>Desenvolvo experiências estratégicas para servidores Discord.</h1>
-  <p>Criação de servidores, bots e organização completa de comunidades.</p>
-  <button class="btn">Contate-me</button>
+<!-- HERO -->
+<h1>Gengar</h1>
+<p>1 ano de experiência em moderação e administração de servidores Discord.</p>
 
-  <!-- SERVIÇOS -->
-  <h2>O que eu faço</h2>
+<button class="btn" onclick="mostrarContato()">Contate-me</button>
 
-  <div class="card">
-    <h3>Estrutura completa</h3>
-    <p>Organização de canais, cargos e categorias.</p>
-    <div class="tag">Canais</div>
-    <div class="tag">Categorias</div>
-    <div class="tag">Cargos</div>
-  </div>
+<p id="contato" style="display:none; margin-top:10px; color:#22c55e;">
+Nick do Discord: chatofiel
+</p>
 
-  <div class="card">
-    <h3>Configuração de bots</h3>
-    <p>Automação e sistemas para seu servidor.</p>
-    <div class="tag">Moderação</div>
-    <div class="tag">Utilidades</div>
-    <div class="tag">Entretenimento</div>
-  </div>
+<!-- SERVIDORES -->
+<h2>Servidores</h2>
 
-  <div class="card">
-    <h3>Setup de moderação</h3>
-    <p>Configuração de regras e automod.</p>
-    <div class="tag">Regras</div>
-    <div class="tag">Punições</div>
-  </div>
+<!-- SERVIDOR 1 -->
+<div class="card">
+  <span class="status">● Ativo</span>
 
-  <!-- PROJETOS -->
-  <h2>Projetos</h2>
+  <h3>Shandow Trades</h3>
 
-  <div class="card">
-    <span class="status">● Ativo</span>
-    <h3>Nome do Projeto</h3>
-    <p>Descrição do projeto aqui (edita depois).</p>
-    <button class="btn">Acessar</button>
-  </div>
+  <p>
+    🛡️🔒 Comunidade focada em trocas seguras.<br><br>
+    Moderadores ativos, regras claras e verificação completa.<br>
+    Ambiente confiável para traders iniciantes e experientes.
+  </p>
 
-  <!-- AVALIAÇÕES -->
-  <h2>Avaliações</h2>
+  <p><strong>Cargo:</strong> CEO</p>
 
-  <div class="card">
-    <h3>Nome da pessoa</h3>
-    <p>"Feedback do cliente aqui..."</p>
-  </div>
+  <div class="tag">CEO</div>
+  <div class="tag">Segurança</div>
+  <div class="tag">Trades</div>
+
+  <a href="https://discord.gg/s4jDjQ2e" target="_blank">
+    <button class="btn">Entrar no servidor</button>
+  </a>
+</div>
+
+<!-- SERVIDOR 2 -->
+<div class="card">
+  <span class="status">● Ativo</span>
+
+  <h3>[EB] Exército Brasileiro</h3>
+
+  <p>
+    🇧🇷 Servidor militar com foco em disciplina, hierarquia e honra.<br><br>
+    Treinamentos intensivos, missões estratégicas e operações táticas.<br>
+    Sistema de promoção por mérito e trabalho em equipe.
+  </p>
+
+  <p><strong>Cargo:</strong> CEO</p>
+
+  <div class="tag">CEO</div>
+  <div class="tag">RP Militar</div>
+  <div class="tag">Disciplina</div>
+
+  <a href="https://discord.gg/evkSXgQjZ" target="_blank">
+    <button class="btn">Entrar no servidor</button>
+  </a>
+</div>
+
+<!-- AVALIAÇÕES -->
+<h2>Avaliações</h2>
+
+<button class="btn" onclick="mostrarInput()">Fazer Avaliação</button>
+
+<div id="avaliacaoBox" style="display:none;">
+  <textarea id="textoAvaliacao" placeholder="Escreva sua avaliação..."></textarea>
+  <button class="btn" onclick="adicionarAvaliacao()">Enviar</button>
+</div>
+
+<div id="listaAvaliacoes"></div>
 
 </div>
 
-<div class="footer">
-  © 2026 - Seu nome
-</div>
+<script>
+function mostrarContato() {
+  document.getElementById("contato").style.display = "block";
+}
+
+function mostrarInput() {
+  document.getElementById("avaliacaoBox").style.display = "block";
+}
+
+function adicionarAvaliacao() {
+  let texto = document.getElementById("textoAvaliacao").value;
+
+  if(texto.trim() === "") return;
+
+  let lista = document.getElementById("listaAvaliacoes");
+
+  let nova = document.createElement("div");
+  nova.className = "card";
+  nova.innerHTML = "<p>" + texto + "</p>";
+
+  lista.prepend(nova);
+
+  document.getElementById("textoAvaliacao").value = "";
+}
+</script>
 
 </body>
 </html>
