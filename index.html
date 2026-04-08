@@ -10,7 +10,7 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family:'Segoe UI', sans-serif;
 }
 
 body {
@@ -33,17 +33,10 @@ nav {
 
 .logo {
   font-weight:bold;
-  font-size:18px;
-}
-
-.menu {
-  cursor:pointer;
 }
 
 /* HERO */
-.hero h1 {
-  font-size:32px;
-}
+.hero h1 { font-size:32px; }
 
 .hero p {
   color:#aaa;
@@ -60,9 +53,7 @@ nav {
   transition:0.3s;
 }
 
-.btn:hover {
-  opacity:0.8;
-}
+.btn:hover { opacity:0.8; }
 
 /* CARD */
 .card {
@@ -80,7 +71,7 @@ nav {
 
 .tag {
   display:inline-block;
-  padding:5px 10px;
+  padding:6px 12px;
   background:#1a1a2e;
   border-radius:10px;
   margin:5px;
@@ -93,11 +84,16 @@ nav {
   color:#22c55e;
 }
 
-/* GRID SERVERS */
+/* GRID */
 .grid {
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
   gap:20px;
+}
+
+/* BOTÃO DISTÂNCIA */
+.btn-server {
+  margin-top:25px;
 }
 
 /* MODAL */
@@ -108,7 +104,6 @@ nav {
   height:100%;
   background:rgba(0,0,0,0.7);
   top:0;
-  left:0;
 }
 
 .modal-content {
@@ -130,10 +125,7 @@ textarea {
   color:white;
 }
 
-/* TITLES */
-h2 {
-  margin-top:50px;
-}
+h2 { margin-top:50px; }
 
 </style>
 </head>
@@ -144,13 +136,14 @@ h2 {
 
 <nav>
   <div class="logo">Gengar.dev</div>
-  <div class="menu">☰</div>
+  <div>☰</div>
 </nav>
 
 <!-- HERO -->
 <div class="hero">
   <h1>Gengar</h1>
   <p>Especialista em servidores Discord • Moderação • Bots • Administração</p>
+
   <button class="btn" onclick="mostrarContato()">Contate-me</button>
 
   <p id="contato" style="display:none; margin-top:10px; color:#22c55e;">
@@ -161,23 +154,35 @@ h2 {
 <!-- PERFIL -->
 <div class="card">
   <h3>Perfil</h3>
-  <p>1 ano de experiência criando e gerenciando comunidades no Discord.</p>
+  <p>1 ano de experiência criando, estruturando e administrando comunidades Discord com foco em organização, segurança e crescimento.</p>
 
-  <div style="display:flex; gap:20px; margin-top:10px;">
+  <div style="display:flex; gap:25px; margin-top:15px;">
     <div><strong>1+</strong><br><span style="color:#aaa;">Ano</span></div>
     <div><strong>CEO</strong><br><span style="color:#aaa;">Liderança</span></div>
+    <div><strong>Comunidades</strong><br><span style="color:#aaa;">Gestão</span></div>
   </div>
 </div>
 
-<!-- HABILIDADES -->
+<!-- HABILIDADES (ESTILO PRINT) -->
 <h2>Habilidades</h2>
 
 <div class="card">
-  <div class="tag">Moderação</div>
-  <div class="tag">Administração</div>
-  <div class="tag">Bots</div>
+  <h3>O que eu faço</h3>
+
+  <p style="margin-bottom:10px;">
+    Desenvolvimento completo de servidores Discord com foco em desempenho,
+    organização e experiência do usuário.
+  </p>
+
+  <div class="tag">Moderação Avançada</div>
+  <div class="tag">Administração de Servidores</div>
+  <div class="tag">Criação de Bots</div>
+  <div class="tag">Automação</div>
+  <div class="tag">Sistema de Cargos</div>
+  <div class="tag">Organização de Canais</div>
   <div class="tag">Segurança</div>
-  <div class="tag">Organização</div>
+  <div class="tag">Verificação</div>
+  <div class="tag">Gestão de Comunidade</div>
 </div>
 
 <!-- SERVIDORES -->
@@ -185,37 +190,47 @@ h2 {
 
 <div class="grid">
 
-  <div class="card">
-    <span class="status">● Ativo</span>
-    <h3>Shandow Trades</h3>
+<!-- SHANDOW -->
+<div class="card">
+  <span class="status">● Ativo</span>
+  <h3>Shandow Trades</h3>
 
-    <p>
-      🛡️🔒 Seu lar de trocas seguras.<br><br>
-      Comunidade confiável com verificação e moderação ativa.
-    </p>
+  <p>
+    🛡️🔒 Shandow Trades - Seu lar de trocas seguras 🏠<br><br>
+    🛡️ Sinta-se em casa para trocas justas e tranquilas! ☕<br><br>
+    Moderadores ativos, regras cristalinas e sistema completo de verificação,
+    garantindo segurança total para todos os membros.<br><br>
+    Comunidade acolhedora que une traders iniciantes e experientes,
+    promovendo negociações confiáveis e organizadas.
+  </p>
 
-    <p><strong>Cargo:</strong> CEO</p>
+  <p><strong>Cargo:</strong> CEO</p>
 
-    <a href="https://discord.gg/s4jDjQ2e" target="_blank">
-      <button class="btn">Entrar</button>
-    </a>
-  </div>
+  <a href="https://discord.gg/s4jDjQ2e" target="_blank">
+    <button class="btn btn-server">Entrar no servidor</button>
+  </a>
+</div>
 
-  <div class="card">
-    <span class="status">● Ativo</span>
-    <h3>Exército Brasileiro</h3>
+<!-- EB -->
+<div class="card">
+  <span class="status">● Ativo</span>
+  <h3>[EB] Exército Brasileiro</h3>
 
-    <p>
-      🇧🇷 Disciplina, hierarquia e honra.<br><br>
-      Treinamentos, missões e operações táticas.
-    </p>
+  <p>
+    🇧🇷 Disciplina, hierarquia e honra.<br><br>
+    Servidor baseado em sistema militar com treinamentos intensivos,
+    missões estratégicas e operações táticas organizadas.<br><br>
+    Sistema de promoção por mérito, regras rígidas e foco em trabalho em equipe,
+    proporcionando uma experiência realista e estruturada.<br><br>
+    Ambiente focado em liderança, evolução e respeito à hierarquia.
+  </p>
 
-    <p><strong>Cargo:</strong> CEO</p>
+  <p><strong>Cargo:</strong> CEO</p>
 
-    <a href="https://discord.gg/evkSXgQjZ" target="_blank">
-      <button class="btn">Entrar</button>
-    </a>
-  </div>
+  <a href="https://discord.gg/evkSXgQjZ" target="_blank">
+    <button class="btn btn-server">Entrar no servidor</button>
+  </a>
+</div>
 
 </div>
 
@@ -226,7 +241,6 @@ h2 {
 
 <div id="lista"></div>
 
-<!-- MODAL -->
 <div class="modal" id="modal">
   <div class="modal-content">
     <h3>Nova avaliação</h3>
